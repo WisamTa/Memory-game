@@ -158,6 +158,46 @@
     }, 600);
   };
   
+  const gameOver = () => {
+    clearInterval(timer);
+  
+    //pause before showing chequred flag modal
+    setTimeout(function() {
+      $("#winModal").show();
+    }, 500);
+  };
+  
+  const checkStars = () => {
+    let currentStars;
+    if (moves >= oneStar) {
+      currentStars = 1;
+    } else if (moves >= twoStar) {
+      currentStars = 2;
+   } else currentStars = 3;
+   if (numStars !== currentStars) {
+     displayStars(currentStars);
+   }
+  };
+  
+  const gameTimer = () => {
+    let startTime = new Date().getTime();
+  
+    // update timer every second
+    timer = setInterval(function() {
+      var now = new Date().getTime();
+  
+      // Find the time elapsed between now and start
+      var elapsed = now - startTime;
+  
+      // Calculate min and sec
+      let minutes = Math.floor((elapsed % (1000 * 60 * 60)
+      ) / (1000 * 60));
+      let seconds = Math.floor((elapsed % (1000 * 60)) /
+      1000);
+    })
+  }
+  
+  
   
   
   })();
