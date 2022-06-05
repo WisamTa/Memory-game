@@ -62,13 +62,65 @@
       trimmedData.forEach(function(card) {
         array.push(new Card(card, 1));
         array.push(new Card(card, 2));
-        
+  
       });
   
       return array;
-        
-      
-    }
+    };
   
+    const shuffle = array => {
+      let currentIndex = array.length,
+        temporaryValue,
+        randomIndex;
+  
+      while (0 !== currentIndex) {
+        // choose an element at random
+        randomIndex = Math.floor(Math.random() *
+          currentIndex);
+        currentIndex -= 1;
+  
+        // switch current and random element
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+      return array;
+    };
+  
+    const displayCards = cardArray => {
+      cardArray.forEach(function(card) {
+  
+        // add cards to game board
+        $("#game-board").append(card.html);
+  
+        // add click listeners
+        $(card.id).click(function() {
+  
+          // start timer on first click
+          if (!gameStarted) {
+  
+            // start timer
+            gameTimer();
+            gameStarted = true;
+          }
+  
+          // check for match when clicked
+          checkMatch(card);
+        });
+      });
+    };
+  const checkMatch = card => {
+   if (!click1.name) {
+     click1 = card;
+     $(card.id).addClass("flipped");
+     return;
+   
+    } else if (!click2.name && click1.id !==card.id) {
+      click2 = card;
+      $(card.id).addClass("flipped");
+  
+  
+    }
+  }
   
   })();
