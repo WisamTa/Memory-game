@@ -13,6 +13,61 @@
     <title>Formula 1 - the Memory Game</title>
 </head>
 <body>
+    <!-- Start modal starts here-->
+    <div id="startModal" class="modal">
+        <div class="modal-content">
+            <div class="close" id="close-start"></div>
+            <h1 class="site-title start"></h1>
+            <h2 class="tag-line start">HOW TO PLAY THIS GAME: You need to find all matching pairs to complete the game!!</h2> 
+            <h3 class="choose start">Choose your level</h3>
+            <button id="easy-level" class="level-button">Easy</button>
+            <button id="medium-level" class="level-button">Medium</button>
+            <button id="hard-level" class="level-button">Hard</button>
+        </div>
+
+    </div>
+    <!-- Start modal ends here-->
+    <!-- Header starts here-->
+    <header>
+        
+        <h1 class="heading">Formula 1 - The Memory Game</h1>
+        <h2 class="tag-line">&ldquo;Lights out and away we gooo!!&rdquo;</h2>
+    </header>
+    <!-- Header ends here-->
+    <!--Game board section starts here-->
+    <section id="game-board" class="board">
+    </section>
+    <!--Game board section ends here-->
+    <!-- Footer starts here-->
+    <footer>
+        <!-- Game clock for user to see wile playing game -->
+        <div class="timer">
+            <h3 class="info">Time: <span class="clock data"></span></h3>
+        </div>
+            <!-- Moves counter for user to see wile playing game -->
+        <div class="counter">
+            <h3 class="info">Moves: <span id="moves" class="data"></span></h3>
+        </div>
+
+    </footer>
+    <!-- Footer ends here-->
+    <!-- End game modal start here-->
+    <div id="winModal" class="modal">
+		<div class="modal-content">
+			<div class="close" id="close-win">&times;</div>
+			<h2 class="congrats">You have Reached the Chequerd Flag <i class="fas fa-flag-checkered"></i></h2>
+			<div class="modal-data">
+				<h3 class="info">Time</h3>
+				<div class="clock data"></div>
+            </div>
+			<div class="play-again">
+				<p class="win-text">Do you want to race again?</p>
+				<button id="restart">Restart the Game</button>
+			</div>
+		</div>
+	</div>
+    <!-- End game modal ends here-->
+
 
 
 
