@@ -119,8 +119,45 @@
       click2 = card;
       $(card.id).addClass("flipped");
   
+      // updating the moves made by player during the game
+       moves++;
+      $("#moves").text(moves);
   
+      checkStars();
+    } else return;
+    if (click1.name === click2.name) {
+      foundMatch();
+  
+    }else {
+      hideCards();
     }
-  }
+  };
+  
+  const foundMatch = () => {
+    matches++;
+    if (matches === pairs) {
+      gameOver();
+    }
+    // Unbind click functions and reset click objects
+    $(click1.id).unbind("click");
+    $(click2.id).unbind("click");
+  
+    // reset click objects
+    click1 = {};
+    click2 = {};
+  };
+  
+  const hideCards = () => {
+    // hide cards
+    setTimeout(function() {
+      $(click1.id).removeClass("flipped");
+      $(click2.id).removeClass("flipped");
+      // reset click object
+      click1 = {};
+      click2 = {};
+    }, 600);
+  };
+  
+  
   
   })();
