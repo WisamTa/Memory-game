@@ -22,10 +22,10 @@
       this.name = card.name;
       this.html = `<div class="card" id="${cardID}">
             <div class="card-back">
-              <img src="assets/images/${this.image}" class="card-image" alt="Formula 1 drivers image">
+              <img src="assets/images/${this.image}" class="card-image" alt="Grand Prix Racing drivers images">
             </div>
             <div class="card-front">
-              <img src="assets/images/back_face.png" class="card-image" alt="Formula 1 logo">
+              <img src="assets/images/back_face.png" class="card-image" alt="Game card back face image">
             </div>
           </div>`;
     }
