@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawsome CDN starts here-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- /Fontawsome CDN ends here-->
     <!-- Google fonts starts here-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto&family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Roboto:wght@400;900&family=Rubik+Beastly&family=Rubik+Mono+One&family=Rubik:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <!-- Google fonts ends here-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Formula 1 - the Memory Game</title>
+    <title>Grand Prix Racing - the Memory Game</title>
 </head>
+
 <body>
     <!-- Start modal starts here-->
     <div id="startModal" class="modal">
         <div class="modal-content">
             <div class="close" id="close-start"></div>
-            <h1 class="site-title start"></h1>
-            <h2 class="tag-line start">HOW TO PLAY THIS GAME: You need to find all matching pairs to complete the game!!</h2> 
+            <h1 class="site-title start">Grand Prix Racing - the Memory Game</h1>
+            <h2 class="tag-line start">HOW TO PLAY THIS GAME: you complete the game by matching the cards. You do that
+                by clicking on the cards.
+                If they match they stay flipped, if they don't match they will flipp back
+                to the starting position.
+            </h2>
             <h3 class="choose start">Choose your level</h3>
             <button id="easy-level" class="level-button">Easy</button>
             <button id="medium-level" class="level-button">Medium</button>
             <button id="hard-level" class="level-button">Hard</button>
         </div>
-
     </div>
     <!-- Start modal ends here-->
     <!-- Header starts here-->
     <header>
-        
-        <h1 class="heading">Formula 1 - The Memory Game</h1>
+        <h1 class="heading">Grand Prix Racing - the Memory Game</h1>
         <h2 class="tag-line">&ldquo;Lights out and away we gooo!!&rdquo;</h2>
     </header>
     <!-- Header ends here-->
     <!--Game board section starts here-->
-    <section id="game-board" class="board">
-    </section>
+    <div id="game-board" class="board"></div>
     <!--Game board section ends here-->
     <!-- Footer starts here-->
     <footer>
@@ -44,46 +53,34 @@
         <div class="timer">
             <h3 class="info">Time: <span class="clock data"></span></h3>
         </div>
-            <!-- Moves counter for user to see wile playing game -->
+        <!-- Moves counter for user to see wile playing game -->
         <div class="counter">
             <h3 class="info">Moves: <span id="moves" class="data"></span></h3>
         </div>
-
     </footer>
     <!-- Footer ends here-->
     <!-- End game modal start here-->
     <div id="winModal" class="modal">
-		<div class="modal-content">
-			<div class="close" id="close-win">&times;</div>
-			<h2 class="congrats">You have Reached the Chequerd Flag <i class="fas fa-flag-checkered"></i></h2>
-			<div class="modal-data">
-				<h3 class="info">Time</h3>
-				<div class="clock data"></div>
+        <div class="modal-content">
+            <div class="close" id="close-win">&times;</div>
+            <h2 class="congrats">You have Reached the Chequerd Flag</h2>
+            <div class="modal-data">
+                <h3 class="info">Time</h3>
+                <div class="clock data"></div>
             </div>
-			<div class="play-again">
-				<p class="win-text">Do you want to race again?</p>
-				<button id="restart">Restart the Game</button>
-			</div>
-		</div>
-	</div>
+            <div class="play-again">
+                <p class="win-text">Would you like to race again?</p>
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+    </div>
     <!-- End game modal ends here-->
-
-
-
-
-
-
-
-
-
-
-
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-  <!-- jQuery CDN ends here-->
-  <script src="assets/js/data.js"></script>
-  <script src="assets/js/script.js"></script>
+    <!-- jQuery CDN starts here-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jQuery CDN ends here-->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
