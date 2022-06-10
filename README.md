@@ -15,10 +15,8 @@
   * [Features Left to Implement](#Features-Left-to-Implement)
 * [Technologies](#Technologies)
 * [Testing](#Testing)
-* [Note](#Note)
 * [Deployment](#Deployment)
-* [Credits](#Credits)
-* [Acknowledgements](#Acknowledgements)
+
 
 # Milestone 2
 
@@ -31,7 +29,7 @@
   document.
 
 
-A live version of game can be found [here]()
+A live version of game can be found [here](https://wisamta.github.io/Memory-game/)
 
 ### Grand Prix Racing - the Memory Game
 ![Mock Up](assets/images/grand_prix_racing_mock_up.png)
@@ -200,22 +198,21 @@ For full Size PDF´s of wireframes click links below.<br>
  * The live Project can be found [here](https://wisamta.github.io/Memory-game/)
 
 
-* All Pages were run through the [W3C HTML Validator](https://validator.w3.org/nu/#textarea) Validator and showed no errors.<br>
+* All Pages were run through the [W3C HTML Validator](https://validator.w3.org/) Validator and showed no errors.<br>
 ![W3C HTML Validator](https://github.com/WisamTa/Memory-game/blob/main/assets/images/html_validation.PNG) <br> 
-* CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and showed no errors.<br>
+* CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and showed no errors.<br>
 ![W3C CSS Validator](https://github.com/WisamTa/Memory-game/blob/main/assets/images/css_validation.PNG)<br>
 
 * Performance test was conducted in Chrome developer tools<br>
  * Lighthouse Desktop report:<br>
 ![Lighthouse desktop report](https://github.com/WisamTa/Memory-game/blob/main/assets/images/dev.PNG)<br>
- * Lighthouse Mobile report:<br>
-![Lighthouse mobile report]()<br>
+ 
 
 # Deployment
 
 ### Project Creation <br>
   * The project was started by me navigating GitHub.com and then i clicked on my repositories. I then clicked on botton for [new repository.](https://github.com/new) <br>
-  * After that I clicked on the drop-down menu and clicked on [Code-Institute-Org/gitpod-full-template.](https://github.com/Sonicbasedrop/GitPod-full-template#readme) I then gave my repository a name (f1-the-memory-game). <br>
+  * After that I clicked on the drop-down menu and clicked on Code-Institute-Org/gitpod-full-template. I then gave my repository a name (Memory-game). <br>
   * I checked ‘Public’-botton. 
   * Opening a the terminal in Gitpod, I then added my asset folders, CSS folder Images folder Js folder etc etc. The following commands were used throughout the project:
   * git add . - This command was used to add files to the staging area before committing.
@@ -223,10 +220,12 @@ For full Size PDF´s of wireframes click links below.<br>
   * git push - This command is used to push all committed changes to the GitHub repository.
 
 ## Using Github Pages <br>
-* 1. Navigate to the [GitHub Repository:](https://sonicbasedrop.github.io/f1-the-memory-game/)
+* 1. Navigate to the [GitHub Repository:](https://github.com/WisamTa/Memory-game)
 * 2. Click my current repository. 
 * 3. Click on the 'Settings' Tab.
 * 4. Click on the Git Hub Pages Heading.
-* 5. Select 'Master Branch' as the source.
+* 5. Select 'Main Branch' as the source.
 * 6. Click the Save button.
 * 7. Click on the link to go to the live deployed page
+
+
