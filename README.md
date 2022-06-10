@@ -82,6 +82,21 @@ The main colours used are shade of Red rgb(248, 94, 94) Two shade of Blue rgba(3
 
 The font used throughout the game is the Rubik font, Montserrat and Sans-serif is the fallback font in case for any reason the font isn’t being imported into the site correctly.
 
+
+#### Imagery
+  *  Images are provided by [Formula 1](https://www.formula1.com).
+#### Wireframes
+Start page<br>
+![Start Page Wireframe](wireframes/choose_level.png)<br> 
+Easy Level<br>
+![Easy Level Wireframe](wireframes/easy_level.png)<br>
+Medium Level<br>
+![Medium Level Wireframe](wireframes/medium_level.png)<br>
+Hard Level<br>
+![Hard Level Wireframe](wireframes/hard_level.png)<br>
+End page<br>
+![End Page Wireframe](wireframes/chequerd_flag.png)<br> 
+
 ### Features
 ---
 #### Existing Features
