@@ -97,6 +97,13 @@ Hard Level<br>
 End page<br>
 ![End Page Wireframe](wireframes/chequerd_flag.png)<br> 
 
+
+For full Size PDF´s of wireframes click links below.<br>
+ [Start Page Wireframe](docs/choose_level.pdf)<br>
+ [Easy Level Wireframe](docs/easy_level.pdf)<br>
+ [Medium Level Wireframe](docs/medium_level.pdf)<br>
+ [Hard Level Wireframe](docs/hard_level.pdf)<br>
+ [End Page Wireframe](docs/chequered_flag.pdf)<br>
 ### Features
 ---
 #### Existing Features
@@ -142,6 +149,67 @@ End page<br>
 #### [Techsini](http://techsini.com/multi-mockup/index.php)
    * tecnisih.com Multi Device Website Mockup Generator was used to create the Mockup image in this README.md
 
+
+###  Testing
+ #### The following steps were taken to ensure the Game works as expected:
+  * step 1: Navigate to the start page <br>
+  EXPECTED RESULT: Pop-up with instruction on how to play the game appears, and three buttons with Easy level (6 pairs 12 cards), Medium level (8 pairs 16 cards)a nd Hard level (12 pairs 24 cards) to choose from.<br>
+  RESULT: pop-up with instruction appears and buttons performes as expected.<br>
+
+  * step 2: Choose one of the three difficulty levels to play the game, after you choose level the board game will be ready to play.<br>
+   EXPECTED RESULT: Board game appears and the game is ready to be played.<br>
+   RESULT: Board game appears and the game is ready to be played.<br>
+
+  * step 3: Check to see that all game cards appears with the "back face" visible to player.<br>
+     EXPECTED RESULT: Game cards appears with the "back face" visible to player.<br>
+     RESULT: Game cards appears with the "back face" visible to player.<br>
+
+  * step 4: Check that the game cards flippes over and the player can see the card images when cards are clicked.<br>
+       EXPECTED RESULT: Game cards flippes over and the player can se the card images when cards are clicked.<br>
+       RESULT: Game cards flippes over and the player can se the card images when cards are clicked.<br>
+
+  * step 5: Check that the game cards flippes back if there is no match when second card is clicked.<br>
+         EXPECTED RESULT: Game cards flippes back if there is no match when second card is clicked.<br>
+         RESULT: Game cards flippes back if there is no match when second card is clicked<br>
+
+  * step 6: Check that the player only can click on two game cards before the cards flippes back to the starting position.<br>
+         EXPECTED RESULT: Player can only click on two game cards before the cards flippes back to the starting position.<br>
+         RESULT: Player can only click on two game cards before the cards flippes back to the starting position.<br>
+
+  * step 7: Check that the if player click on the first clicked card twice it will not flippe back, but will stay visible to player until the second card is clicked and there is  no match, if there is a match both cards will stay visble for the duration of the game.<br>
+         EXPECTED RESULT: If player click on the first clicked card twice it will not flippe back, but will stay visible to player until the second card is clicked and there is no match, if there is a match both cards will stay visble for the duration of the game.<br>
+         RESULT: The first clicked card stays visble to player until second card is clicked and there is no match, if there is a match both cards will stay visible for the duration of the game.<br>
+
+  * step 8: Check that the game cards stays flipped and card images are visble until player has found all matching pairs and the game is won.<br
+         EXPECTED RESULT: Game cards stays flipped and card images are visble until player has found all matching pairs and the game is won.<br>
+         RESULT: Game cards stays flipped and card images are visble until player has found all matching pairs and the game is won.<br>
+
+ * step 9: Check time elapsed and moves counter while game is ongoing (time should change every second, moves counter should indicate 1 move per 2 clicks on game cards<br>
+     EXPECTED RESULT: Time elapsed changes every second and moves counter indicate 1 move per 2 clicks on game cards <br>
+     RESULT: Time elapsed changes every second and moves counter indicate 1 move per 2 clicks on game cards<br>
+
+ * step 10: When player has found all pairs and the game is won, a pop-up with a message to player should appear. The player should also see the time it took to solve the game. 
+     There should also be a restart button, when button is clicked the start pop-up should appear and the player have the opption the choose the same or any other level to play<br>
+     EXPECTED RESULT: When player has found all pairs and the game is won, a pop-up with a message to player shoulsd appear. The player should also see time it took to solve the game. There should also be a restart button, when button is clicked the start pop-up should appear and the player have the opption the choose the same or any other level to play<br> 
+     RESULT: The pop-up appears with the time it took to solve the game, the restart button appears and when clicked it sends the player back to the start page were the player can choose the same or any other level to play<br>
+
+* step 11: The game was tested across different browsers and screen sizes to make sure responsiveness and browser compatibility on: Google Chrome, Safari, Firefox, Intenet Explorer, iPhone 8 <br>
+       EXPECTED RESULT: Game should be responsive and compatibility across the differnt browser tested and screen sizes down to 300px.<br>
+       RESULT: Game is responsive across the differnt browser tested and screen sizes down to 300px.<br>
+
+ * The live Project can be found [here]()
+
+
+* All Pages were run through the [W3C HTML Validator](https://validator.w3.org/nu/#textarea) Validator and showed no errors.<br>
+![W3C HTML Validator](https://github.com/WisamTa/Memory-game/blob/main/assets/images/html_validation.PNG) <br> 
+* CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and showed no errors.<br>
+![W3C CSS Validator](https://github.com/WisamTa/Memory-game/blob/main/assets/images/css_validation.PNG)<br>
+
+* Performance test was conducted in Chrome developer tools<br>
+ * Lighthouse Desktop report:<br>
+![Lighthouse desktop report]()<br>
+ * Lighthouse Mobile report:<br>
+![Lighthouse mobile report]()<br>
 
 # Deployment
 
